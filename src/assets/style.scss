@@ -1,0 +1,40 @@
+@import "./styles/variables.scss";
+
+html {
+  font-size: 24px;
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: $color-text-black;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.my-container {
+  padding: 0 2rem;
+  @media (max-width: 510px) {
+    padding: 0 1rem;
+  }
+}
+.v-application p,
+.v-slider--horizontal {
+  margin: 0;
+  min-height: auto;
+}
+.v-slider--horizontal .v-slider__track-container {
+  height: 3px;
+}
+.v-input--selection-controls,
+.v-input__slot {
+  margin: 0;
+  padding: 0;
+}
+.v-messages {
+  min-height: auto;
+}
